@@ -1,0 +1,485 @@
+:root {
+    --main-color: #F0ECF7;
+    --SecondaryColor: #485156;
+    --TextColor: rgb(46 46 46);
+    --SlidePadding: 5rem;
+    --MainMargin: 0 0 2.0rem;
+    --page-color: #9a5db2;
+    --white:#fff;
+    /*--MainFontFamily: 'SohoGothic', 'sans-serif';*/
+    --MainText: 1.8rem; /*Aquí cambias el tamaño del texto*/
+    --MainLineHeight: 2.9rem; /*Aquí se cambia el interlineado*/
+    --Mainweight:bold;
+}
+
+#actividad .carousel-inner .item-container {
+    border-radius: 20px;
+}
+
+body #actividad .content .header .logo_holder {
+    display: none;
+}
+
+/*audio*/
+#actividad .player.audio, #actividad .player.video, #help-panel-content .player, #remote-alert-modal-rich .player { 
+    width: 38px !important;
+    height: 38px !important;
+    border: 0;
+    border-radius: 50%;
+    background-image: none;
+    background-color: var(--page-color);
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    border: 1px solid var(--page-color);
+    cursor: pointer;
+    margin: -7px 0px;
+    background-position: center;
+    background-image: url(/useruploads/r/a/475740582/activity_other_imported/play_icon.png);
+    background-size:45%;
+ 
+}
+
+#actividad .player:hover, #help-panel-content .player:hover, #remote-alert-modal-rich .player:hover {
+    background-color: #c278df;
+}
+
+/*imágenes*/
+.bck-i-fullscreen-wrapper {
+    padding: 0px;
+}
+
+/*numero slide*/
+body #actividad .content .header .slide_number {
+    display: none;
+}
+
+/*pop-uo*/
+#actividad .info-button.only-teacher, .info-template .info-title.only-teacher {
+    border: 1px solid #9A5DB2;
+}
+
+#actividad .info-button {
+	cursor: pointer;
+    margin: 14px 5px 0px 0px;
+    color: #9A5DB2;
+    font-size: 30px;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+    position: relative;
+}
+
+.fa-info:before {
+    content: "\f0eb";
+}
+
+/*navbar*/
+.navbar.libro,
+.libro-left ul li .title,
+.libro-left ul, .libro-right ul,.libro-left ul li .title {
+    background:var(--SecondaryColor)!important;
+}
+
+/*enlaces*/
+a:hover, a:active, a:focus {
+    color: var(--page-color);
+}
+
+/*ADJUNTO*/
+.body_clase #actividad .bck-file-attach {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    position: relative;
+    text-decoration: none !important;
+    font-size: 1.6rem;
+}
+
+.body_clase #actividad .bck-file-attach:before {
+    content: "\f0c6";
+    font-family: FontAwesome;
+    font-size: 24px;
+    font-weight: 100;
+    color: var(--page-color);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.bck-file-label {
+    background: var(--maincolor);
+    }
+
+.bck-file-attach img {
+    display: none;
+}
+
+/*actividad enlazada*/
+.texto_curso .bck-activity-link, .texto_curso .bck-link {
+    cursor: pointer;
+    padding-top: 10px;
+    font-size: 1.6rem;
+}
+/*BOTONERA*/
+
+
+#actividad .class_slide .review {
+    margin-top: 40px;
+    text-align: left;
+}
+
+
+    .btn-danger, .btn-danger[disabled] {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #fc4237;
+    color: #fc4237;
+    background: white;
+    font-weight: 700;
+    }
+    .btn-primary, .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--page-color);
+    color: var(--page-color);
+    background: white;
+    font-weight: 700;
+    }
+    .btn-primary:not([disabled]):hover, .btn-primary:not([disabled]):focus, .btn-primary:not([disabled]):active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: var(--page-color);
+    border-color: var(--page-color);
+    color: white
+    }
+    #actividad .content .review .attemps span {
+    background-color: var(--page-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    }
+    .btn-primary[disabled], .btn-primary[disabled]:focus {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+    }
+    .btn-solution, .btn-solution.disabled,
+    .btn-solution[disabled], .btn-next, .btn-next.disabled,
+    .btn-next[disabled] {
+    color: #00bdff;
+    background-color: white;
+    border-color: #00bdff;
+    border: 2px solid #00bdff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    }
+    .btn-solution:hover,
+    .btn-solution:focus,
+    .btn-solution:active,
+    .btn-next:hover, .btn-next:focus,
+    .btn-next:active,
+    .open .dropdown-toggle.btn-solution {
+    color: #fff;
+    background-color: #00bdff;
+    border-color: transparent;
+    }
+ /*---*/   
+
+/*--TABLAS--*/
+
+.content table:not(.rf-tablegrid) td, .content table:not(.rf-tablegrid) th {
+    border: inherit;
+    padding: 5px;
+    background: inherit;
+}
+
+.content table:not(.rf-tablegrid) {
+    border: inherit;
+    margin-bottom: 20px;
+}
+
+
+/*cajas*/
+
+.bck-box {
+}
+
+.bck-box.box-2.center {
+    background: var(--main-color);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.bck-box.box-2.center .bck-content {
+    padding: 15px 10px 1px 10px;
+    font-weight: 400;
+}
+
+/*caja 3*/
+.bck-box.box-3.center {
+	background-color: var(--SecondaryColor);
+	color: #fff;
+    border: 0;
+	width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+    padding-left: var(--SlidePadding);
+    padding-right: var(--SlidePadding);
+    margin-top: -0.5rem; /*Mismo valor que el padding de la slide*/
+    border-radius: 20px 20px 0px 0px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 11px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+   }
+
+
+/*caja 4*/
+.bck-box.box-4.center .bck-title {
+	border: none;
+    width: 30px !important;
+    height: 30px !important;
+    background-color: var(--page-color);
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--white);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+
+.bck-box.box-4.center .bck-content {
+    padding: 0;
+    border: 0;
+    text-align: center;
+       }
+
+/*------------------------------------*/
+/*------- AJUSTES GENERALES ----------*/    
+/*------------------------------------*/
+
+
+
+/*Reglas que beben de las variables principales*/
+html body:not(.edit),
+ body.edit .navbar.libro {
+    line-height: var(--MainLineHeight);
+    font-size: var(--MainText);
+    font-family: var(--MainFontFamily)
+}
+#actividad .texto_curso,
+ #actividad .texto_curso p {
+     font-size: var(--MainText);
+     line-height: var(--MainLineHeight) !important;
+     font-weight: var(--Mainweight);
+}
+#actividad .pregunta .texto_curso {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+#actividad .slide_content_type_1 .pregunta .texto_curso,
+#actividad .texto_curso,
+.html-book {
+    font-size: var(--MainText);
+}
+#actividad .workspace {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+.form-control {
+    font-size: var(--MainText);
+}
+
+/*Modificación Padding Slide*/
+#actividad .carousel-inner .item-container .class_slide {
+    padding: 5px var(--SlidePadding);
+}
+/* Smartphones (portrait & landscape) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    :root {
+        --SlidePadding: 3rem;
+    }
+}
+
+
+
+
+/*Para estandarizar que el texto dentro de estos elementos tengan el mismo tamaño*/
+/*Flipbox*/
+#actividad .bck-flipbox {
+    line-height: var(--MainLineHeight);
+    font-size: var(--MainText);
+}
+#actividad .bck-flipbox .bck-flipbox-face {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+/*Palabra emergente*/
+.body_clase.edit .popover-title,
+ .popover-template .popover-title {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+/*TABS*/
+#actividad .bck-tabs-box .bck-tabslists .bck-tabtitles {
+    font-size: var(--MainText);
+}
+/*Tablas*/
+#actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
+    font-size: var(--MainText);
+}
+/*Opciones a arrastrar en rellenar huecos con "Respuestas visibles" activado*/
+.fillblanks-draggable-wrapper .response p {
+    font-size: var(--MainText);
+}
+/*Tamaño de las opciones en verdadero y falso*/
+.workspace.true-false .radio-option input.filter-radio[type="radio"]+label.filter-label {
+    font-size: var(--MainText);
+}
+/*Tamaño en plantilla de clasificar*/
+#actividad .workspace.clasificar {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+/*Tamaño en plantilla Test*/
+.test .checkbox-option label.filter-label {
+    font-size: var(--MainText);
+}
+.checkbox-option label.filter-label,
+ .checkbox-option label.filter-label-append,
+  .radio-option label.filter-label {
+    font-size: var(--MainText);
+}
+/*Palabras cruzadas*/
+.slide.crosswords {
+    font-size: var(--MainText);
+}
+.slide.crosswords .respuestas .respuesta {
+    line-height: var(--MainLineHeight);
+}
+.slide.crosswords .indice {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+.slide.crosswords .enunciados .enunciado {
+    font-size: var(--MainText);
+}
+
+/*------ Crucigrama ----*/
+.slide.crosswords-puzzle .enunciados {
+    line-height: var(--MainLineHeight);
+}
+.slide.crosswords-puzzle .enunciado {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+}
+
+/*Estas son reglas para la  separación entre todos los elementos Separación de 20px entre todos, menos para el último párrafo existente*/
+#actividad .texto_curso p p:last-child {
+    margin-bottom: 0;
+}
+/*Cajas*/.bck-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+/*Grids*/ .bck-row.row   { 
+    margin-bottom: 20px;
+}
+/*Desplegables*/ #actividad .bck-dropdown {
+    margin-bottom: 20px;
+}
+/*Flipbox*/ #actividad .bck-flipbox {
+    margin-bottom: 20px;
+}
+/*Popup Boton #actividad .info-button {
+    margin-bottom: 20px;
+}*/
+/*Tablas*/ #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
+    margin-bottom: 20px;
+}
+
+
+
+
+/*---*/
+/*GRIDS - Para que no haya espacio a la izquierda*/
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 0;
+}
+
+/*---*/
+/* Esto elimina el padding de la plantilla "Rellenar espacios" con la opción "Marco", que viene marcada por defecto*/
+.workspace.frame {
+    padding: 0;
+}
+
+/*Estilo de la solución en "Respuestas cortas" no autoevaluables que viene sin estilo por defecto*/
+.hint.solucion.decoding {
+    color: #00BDFF;
+}
+/*Ajustes en la plantilla de Marcar palabras para que no se descuadren las listas en esta plantilla*/
+#actividad .markwords-word {
+    line-height: var(--MainLineHeight) !important;
+}
+#actividad .markword-active,
+#actividad .markword-correct,
+#actividad .markword-false,
+#actividad .markword-solution {
+    line-height: var(--MainLineHeight) !important;
+    padding: 0 4px !important;
+    border: 0 !important;
+    outline: 2px solid rgb(35,31, 32) !important;
+    border-radius: 5px !important;
+    color: rgb(35,31, 32) !important;
+}
+#actividad .markword-correct {
+    outline-color: #57e900 !important;
+}
+#actividad .markword-false {
+    outline-color: #ff3626 !important;
+}
+#actividad .markword-solution {
+    outline-color: transparent !important;
+}
+/*Ajustes en clasificar*/
+#actividad .workspace.clasificar .clasificar_lista .classify-item {
+    padding: 5px;
+}
+#actividad .workspace.clasificar .clasificar_lista li>p {
+    top: 0;
+    transform: none;
+}
+
+/*Ajustes sopa de letras*/
+.rf-tgrid {
+    height: 30px;
+    width: 30px;
+    font-family: var(--MainFont);
+    font-weight: normal;
+    font-size: var(--MainText);
+}
+.rf-foundword {
+    font-family: var(--MainFont);
+    font-size: var(--MainText);
+}
+.rf-wordcontainer li .index {
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+    font-family: var(--MainFont);
+}
+.rf-tablestyle {
+    border: 3px solid;
+    border-color: #CCCCCC;
+}
+.rf-wordcontainer {
+    border: 0;
+    font-family: var(--MainFont);
+    font-size: var(--MainText);
+}
