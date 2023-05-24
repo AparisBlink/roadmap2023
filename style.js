@@ -27,6 +27,9 @@
 				//{ name: 'Lista desordenada', element: 'ul', attributes: { 'class': '' } },
 				{ name: 'Caja actividad', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
 
+				{ name: 'Popup 1', type: 'widget', widget: 'blink_popover', attributes: { 'class': 'bck-popup bck-popup-1' } },
+				{ name: 'Popup 2', type: 'widget', widget: 'blink_popover', attributes: { 'class': 'bck-popup bck-popup-2' } },
+
 				{ name: 'Tabla sin bordes', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table-no-border'} },
 				{ name: 'Celda encabezado', element: 'td', attributes: { 'class': 'bck-td-a' } },
 			]
