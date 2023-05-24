@@ -4,10 +4,10 @@
 
 (function (blink) {
 	'use strict';
-	var PearsonheActiveteachStyle = function () {
+	var Roadmap2023Style = function () {
         blink.theme.styles["pearson_generic"].apply(this, arguments);
     };
-	PearsonheActiveteachStyle.prototype = {
+	Roadmap2023Style.prototype = {
 		parent: blink.theme.styles["pearson_generic"].prototype,
 		bodyClassName: 'content_type_clase_pearson-activeteach',
 		extraPlugins: ['image2'],
@@ -59,9 +59,9 @@
 
 
 	
-	PearsonheActiveteachStyle.prototype = _.extend({}, new blink.theme.styles["pearson_generic"](), PearsonheActiveteachStyle.prototype);
+	Roadmap2023Style.prototype = _.extend({}, new blink.theme.styles["pearson_generic"](), Roadmap2023Style.prototype);
 
-    blink.theme.styles['pearson-activeteach'] = PearsonheActiveteachStyle;
+    blink.theme.styles['pearson-activeteach'] = Roadmap2023Style;
 
 
 })(blink);
